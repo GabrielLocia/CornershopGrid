@@ -65,6 +65,47 @@ body {
   transform: translateY(-5px);
 }
 
+.country {
+  display: flex;
+  justify-self: right;
+  flex-direction: column;
+}
+
+.country .country-btn {
+  margin-top: auto;
+  min-width: 200px;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+  color: #4a4a4a;
+  outline: none;
+}
+
+.country-btn .iconify {
+  font-size: 30px;
+}
+
+.country-btn p {
+  display: flex;
+}
+
+.country-btn .arrow {
+  transform: rotate(180deg);
+  margin-left: auto;
+}
+
+.country-btn:hover,
+.to-top:hover {
+  cursor: pointer;
+}
+
+.to-top {
+  color: #fff;
+  font-size: 42px;
+  margin-left: auto;
+}
 .copyright {
   grid-column-start: 1;
   grid-column-end: -1;
