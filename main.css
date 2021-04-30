@@ -109,6 +109,8 @@ body {
   display: flex;
   justify-self: right;
   flex-direction: column;
+  grid-column-start: 4;
+  grid-row-start: 1;
 }
 @media screen and (max-width: 750px) {
   .country {
@@ -146,7 +148,7 @@ body {
 }
 
 .country-btn .arrow {
-  transform: rotate(180deg);
+  transform: rotate(180deg) !important;
   margin-left: auto;
 }
 
@@ -158,9 +160,9 @@ body {
 .to-top {
   color: #fff;
   font-size: 42px;
+  grid-column-start: 4;
+  grid-row-start: 1;
   margin-left: auto;
-  position: absolute;
-  right: 10px;
 }
 .copyright {
   grid-column-start: 1;
