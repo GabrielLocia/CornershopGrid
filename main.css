@@ -1,18 +1,170 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 100%;
   box-sizing: border-box;
-  list-style: none;
+}
+@font-face {
+  font-family: AvenirNextCondensed;
+  src: url(fonts/AvenirNextCondensed.ttc);
+}
+
+@font-face {
+  font-family: AvenirNext sans-serif;
+  src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+  font-family: AvenirNextBold sans-serif;
+  src: url(fonts/AvenirNextLTPro-Bold.otf);
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'AvenirNextCondensed', sans-serif;
+  font-weight: 400;
+  list-style: none;
 }
 
 #container {
   display: grid;
   grid-template-columns: [first] 100%;
   grid-template-rows: 200px 200px 200px 200px;
+}
+
+#part2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.fruit {
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-image: url(img/fruts.png);
+
+  margin: 0 auto;
+}
+
+#part2 footer {
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+  .fruit{
+    background-image: url(img/frutsx2.png);
+  }
+}
+
+
+.numbers {
+  display: flex;
+}
+
+.numbers figure {
+
+  display: block;
+  margin: 0 auto;
+  font-family: 'AvenirNext', sans-serif;
+  margin-bottom: 32px;
+  width: 84px;
+  height: 84px;
+  line-height: 84px;
+  font-size: 42px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: white;
+}
+
+.numbers li:nth-child(1) figure {
+  border: 2px solid #ff000e;
+  background: #ff000e;
+}
+
+.numbers li:nth-child(2) figure {
+  border: 2px solid #f58900;
+  background: #ff8f00;
+}
+
+.numbers li:nth-child(3) figure {
+  border: 2px solid #00d44e;
+  background: #00de52;
+}
+ol {
+  list-style: none;
+}
+
+.numbers h2 {
+  color: #2b2b2b;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.numbers p {
+  font-size: 18px;
+  font-family: 'AvenirNext', sans-serif;
+  color: #2b2b2ba6;
+}
+
+.numbers li {
+  line-height: 1.2;
+}
+
+.numbers > * {
+  width: 33.3333333333%;
+  padding: 16px;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    padding-left: 52px;
+    padding-right: 52px;
+    margin: 0 auto;
+    max-width: 1037px;
+  }
+
+.list header {
+  zoom: 1;
+  padding-bottom: 35px;
+  display: table;
+  width: 100%;
+}
+.list header h2 {
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-weight: 600px;
+}
+
+@media (max-width: 600px) {
+  .numbers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  .numbers > * {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .list{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .fruit {
+    background-size: 540px;
+    height: 120px;
 }
 
 /* Estilos de Footer */
