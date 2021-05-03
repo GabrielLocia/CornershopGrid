@@ -41,14 +41,15 @@ body {
 
 /* PARTE 1: Estilos Introducción y Descargas */
 .logo {
+  margin-top: 25px;
   height: 100%;
-  margin: 250px;
 }
 
 .logo img{
   width: 300px;
   display: block;
   margin: auto;
+  padding-top: 25px;
 }
 
 .heading {
