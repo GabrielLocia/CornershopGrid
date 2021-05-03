@@ -1,3 +1,4 @@
+/* Estilos Generales */
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +11,25 @@
 }
 
 @font-face {
-  font-family: AvenirNext sans-serif;
-  src: url(fonts/AvenirNextLTPro-Regular.otf);
-}
-
-@font-face {
-  font-family: AvenirNextBold sans-serif;
+  font-family: AvenirNextLTPro-Bold sans-serif;
   src: url(fonts/AvenirNextLTPro-Bold.otf);
 }
 
+@font-face {
+  font-family: AvenirLTStd-Book sans-serif;
+  src: url(fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+  font-family: AvenirLTStd-Light sans-serif;
+  src: url(fonts/AvenirLTStd-Light.otf);
+}
+
 body {
-  font-family: 'AvenirNextCondensed', sans-serif;
-  font-weight: 400;
+  font-family: 'AvenirLTStd-Book', sans-serif;
+  font-weight: 200;
   list-style: none;
+  line-height: 0;
 }
 
 #container {
@@ -30,8 +37,142 @@ body {
   grid-template-columns: [first] 100%;
   grid-template-rows: repeat(933px,4);
 }
+/* FIN Estilos Generales */
 
+/* PARTE 1: Estilos Introducción y Descargas */
+.heading {
+  border: 1px solid white;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 35px;
+  padding-right: 52px;
+  padding-bottom: 45px;
+  padding-left: 52px;
+  color: #ff0026;
+  font-weight: 700px;
+  font-family: "AvenirNextCondensed",  sans-serif;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+.logo {
+  height: 100%;
+  margin: 250px;
+}
+
+.logo img{
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.box-login {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 135px;
+  text-align: center;
+}
+
+form {
+  height: 55px;
+  margin-bottom: 30px;
+}
+
+input {
+  height: 58px;
+  width: 180px;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  outline: none;
+  appearance: none;
+  padding-right: 16px;
+  padding-left: 16px;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+input:focus {
+  border: 2px solid;
+  border-color: #007aff;
+  outline: 0 none;
+}
+
+button {
+  background-color: #FF0026;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1px 16px;
+  margin: 6px;
+  height: 55px;
+  border-radius: 8px;
+  font-family: 'AvenirNextBold', sans-serif;
+  font-size: 20px;
+}
+
+#login , a {
+  font-size: 18px;
+  color: #888B90;
+}
+
+#login a {
+  font-weight: bold;
+  font-family: 'AvenirNextBold', sans-serif;
+}
+
+.gif {
+  text-align: center;
+
+}
+
+.title {
+  display: inline-flex;
+  font-family: 'AvenirNextBold', sans-serif;
+  white-space: nowrap;
+  margin-right: 16px;
+  align-items: center;
+  justify-content: flex-start;
+} 
+
+.title h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+} 
+
+.download {
+  background-color: rgba(220 , 220, 223, 0.8);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.text-buttons {
+  display: flex;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.boxes {
+  display:inline-flex;
+  margin: 20px;
+}
+
+.boxes div {
+  margin: 0 10px 0 10px;
+}
+/* FIN PARTE 1 */
+
+
+/* PARTE 2: Estilos de Como funciona */
 #part2 {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -43,8 +184,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  background-image: url(img/fruts.png);
-
+  background-image: url(img/fruts.jpeg);
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -58,13 +199,11 @@ body {
   }
 }
 
-
 .numbers {
   display: flex;
 }
 
 .numbers figure {
-
   display: block;
   margin: 0 auto;
   font-family: 'AvenirNext', sans-serif;
@@ -92,8 +231,10 @@ body {
   border: 2px solid #00d44e;
   background: #00de52;
 }
+
 ol {
   list-style: none;
+
 }
 
 .numbers h2 {
@@ -101,11 +242,11 @@ ol {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 16px;
+  font-family: 'AvenirNext', sans-serif;  /* Para cambiar la fuente */
 }
 
 .numbers p {
   font-size: 18px;
-  font-family: 'AvenirNext', sans-serif;
   color: #2b2b2ba6;
 }
 
@@ -118,13 +259,11 @@ ol {
   padding: 16px;
 }
 
-
 .list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
     padding-left: 52px;
     padding-right: 52px;
     margin: 0 auto;
@@ -133,14 +272,16 @@ ol {
 
 .list header {
   zoom: 1;
-  padding-bottom: 35px;
+  padding-bottom: 5px;
   display: table;
   width: 100%;
 }
 .list header h2 {
-  letter-spacing: 1px;
-  font-size: 36px;
-  font-weight: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'AvenirNextLTPro-Bold', sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -167,8 +308,9 @@ ol {
     height: 120px;
 }
 }
+/* FIN PARTE 2 */
 
-/* Estilos de Footer */
+/* PARTE 4: Estilos de Footer */
 .footer {
   background-color: #2b2b2b;
   min-height: 60vh;
@@ -182,7 +324,7 @@ ol {
   display: grid;
   grid-template-columns: 200px 200px 1fr 1fr;
   grid-template-rows: 200px 1fr;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 2;
 }
 @media screen and (max-width: 950px) {
@@ -222,6 +364,10 @@ ol {
 .copyright p {
   color: #888b90;
 }
+
+ul {
+  list-style: none;
+} /*Para quitar los bullets de todas las listas*/
 
 .social {
   color: #dcdcdf;
@@ -330,3 +476,5 @@ ol {
     grid-row-start: 4;
   }
 }
+
+/* FIN PARTE 4 */
