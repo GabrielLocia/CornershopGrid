@@ -40,13 +40,25 @@ body {
 /* FIN Estilos Generales */
 
 /* PARTE 1: Estilos Introducción y Descargas */
+.logo {
+  height: 100%;
+  margin: 250px;
+}
+
+.logo img{
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
 .heading {
   border: 1px solid white;
   justify-content: center;
 }
 
 h1 {
-  margin-top: 35px;
+  margin-top: 58px;
+  margin-bottom: 30px;
   padding-right: 52px;
   padding-bottom: 45px;
   padding-left: 52px;
@@ -59,19 +71,8 @@ h1 {
   line-height: 1;
 }
 
-.logo {
-  height: 100%;
-  margin: 250px;
-}
-
-.logo img{
-  width: 300px;
-  display: block;
-  margin: auto;
-}
-
 .box-login {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
   height: 135px;
@@ -116,6 +117,14 @@ button {
   font-size: 20px;
 }
 
+button:hover {
+  transform: translateY(-5px);
+}
+
+#login {
+  margin-top: 15px;
+}
+
 #login , a {
   font-size: 18px;
   color: #888B90;
@@ -129,6 +138,20 @@ button {
 .gif {
   text-align: center;
 
+}
+
+.download {
+  background-color: rgba(220 , 220, 223, 0.8);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.text-buttons {
+  display: flex;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content: space-evenly;
+  align-items:center;
 }
 
 .title {
@@ -145,23 +168,9 @@ button {
   font-weight: 600;
 } 
 
-.download {
-  background-color: rgba(220 , 220, 223, 0.8);
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.text-buttons {
-  display: flex;
-  flex-wrap:wrap;
-  align-content:center;
-  justify-content: space-evenly;
-  align-items:center;
-}
-
 .boxes {
   display:inline-flex;
-  margin: 20px;
+  margin: 40px;
 }
 
 .boxes div {
@@ -184,7 +193,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  background-image: url(img/fruts.jpeg);
+  background-image: url(img/frutsx2.jpeg);
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -195,7 +204,7 @@ button {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
   .fruit{
-    background-image: url(img/frutsx2.png);
+    background-image: url(img/frutsx2.jpeg);
   }
 }
 
@@ -318,7 +327,7 @@ ol {
 
 .footer-container {
   max-width: 933px;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 30px 0;
   max-height: 288px;
   display: grid;
@@ -329,7 +338,7 @@ ol {
 }
 @media screen and (max-width: 950px) {
   .footer-container {
-    margin: 0 20px;
+    margin: 15px 20px;
   }
 }
 
