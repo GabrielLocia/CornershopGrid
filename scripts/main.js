@@ -6,11 +6,17 @@
  * TODO3. Integración de script en Página.
  **/
 
+//Selector de img con id comida.
+const comida = document.getElementById("comidas");
+function cambioComida(num) {
+    comida.src = `./img/comida-${num}.png`
+}
+
 // Funcion que devuelve una promesa con un tiempo de espera de 0.5s
 function timeOut(num) {
     return new Promise(resolve => {
         setTimeout(() => {
-            resolve(num);
+            resolve(cambioComida(num));
         }, 600);
     });
 }
@@ -18,10 +24,8 @@ function timeOut(num) {
 // Función tipo asincrona para llamar a timeOut
 // dentro de un ciclo que es igual al numero de imágenes.
 async function animacion() {
-    console.log('Llamado de animacion');
-    for (let index = 0; index < 6; index++) {
+    for (let index = 0; index < 9; index++) {
         const result = await timeOut(index);
-        console.log(result);
     }
     //Reinicio de función haciendo un ciclo infinito.   
     animacion();
