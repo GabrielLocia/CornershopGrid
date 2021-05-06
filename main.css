@@ -137,12 +137,14 @@ a {
 
 .gif {
   text-align: center;
+  margin-bottom: -100px;
 }
 
 .download {
   background-color: rgba(220, 220, 223, 0.8);
   padding-top: 80px;
   padding-bottom: 80px;
+  backdrop-filter: blur(20px);
 }
 
 .text-buttons {
