@@ -5,28 +5,26 @@
   font-size: 100%;
   box-sizing: border-box;
 }
+/*Fonts*/
 @font-face {
   font-family: AvenirNextCondensed;
   src: url(fonts/AvenirNextCondensed.ttc);
 }
-
 @font-face {
   font-family: AvenirNextLTPro-Bold sans-serif;
   src: url(fonts/AvenirNextLTPro-Bold.otf);
 }
-
 @font-face {
   font-family: AvenirLTStd-Book sans-serif;
   src: url(fonts/AvenirLTStd-Book.otf);
 }
-
 @font-face {
   font-family: AvenirLTStd-Light sans-serif;
   src: url(fonts/AvenirLTStd-Light.otf);
 }
 
 body {
-  font-family: 'AvenirLTStd-Book', sans-serif;
+  font-family: "AvenirLTStd-Book", sans-serif;
   font-weight: 200;
   list-style: none;
   line-height: 0;
@@ -35,7 +33,7 @@ body {
 #container {
   display: grid;
   grid-template-columns: [first] 100%;
-  grid-template-rows: repeat(933px,4);
+  grid-template-rows: repeat(933px, 4);
 }
 /* FIN Estilos Generales */
 
@@ -45,7 +43,7 @@ body {
   height: 100%;
 }
 
-.logo img{
+.logo img {
   width: 300px;
   display: block;
   margin: auto;
@@ -64,8 +62,8 @@ h1 {
   padding-bottom: 45px;
   padding-left: 52px;
   color: #ff0026;
-  font-weight: 700px;
-  font-family: "AvenirNextCondensed",  sans-serif;
+  font-weight: 700;
+  font-family: "AvenirNextCondensed", sans-serif;
   font-size: 65px;
   text-transform: uppercase;
   text-align: center;
@@ -106,7 +104,7 @@ input:focus {
 }
 
 button {
-  background-color: #FF0026;
+  background-color: #ff0026;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -114,7 +112,7 @@ button {
   margin: 6px;
   height: 55px;
   border-radius: 8px;
-  font-family: 'AvenirNextBold', sans-serif;
+  font-family: "AvenirNextBold", sans-serif;
   font-size: 20px;
 }
 
@@ -126,51 +124,53 @@ button:hover {
   margin-top: 15px;
 }
 
-#login , a {
+#login,
+a {
   font-size: 18px;
-  color: #888B90;
+  color: #888b90;
 }
 
 #login a {
   font-weight: bold;
-  font-family: 'AvenirNextBold', sans-serif;
+  font-family: "AvenirNextBold", sans-serif;
 }
 
 .gif {
   text-align: center;
-
+  margin-bottom: -100px;
 }
 
 .download {
-  background-color: rgba(220 , 220, 223, 0.8);
+  background-color: rgba(220, 220, 223, 0.8);
   padding-top: 80px;
   padding-bottom: 80px;
+  backdrop-filter: blur(20px);
 }
 
 .text-buttons {
   display: flex;
-  flex-wrap:wrap;
-  align-content:center;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: space-evenly;
-  align-items:center;
+  align-items: center;
 }
 
 .title {
   display: inline-flex;
-  font-family: 'AvenirNextBold', sans-serif;
+  font-family: "AvenirNextBold", sans-serif;
   white-space: nowrap;
   margin-right: 16px;
   align-items: center;
   justify-content: flex-start;
-} 
+}
 
 .title h2 {
   font-size: 2.1rem;
   font-weight: 600;
-} 
+}
 
 .boxes {
-  display:inline-flex;
+  display: inline-flex;
   margin: 15px;
 }
 
@@ -178,7 +178,6 @@ button:hover {
   margin: 0 10px 0 10px;
 }
 /* FIN PARTE 1 */
-
 
 /* PARTE 2: Estilos de Como funciona */
 #part2 {
@@ -203,8 +202,8 @@ button:hover {
   width: 100%;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-  .fruit{
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fruit {
     background-image: url(img/frutsx2.jpeg);
   }
 }
@@ -216,7 +215,7 @@ button:hover {
 .numbers figure {
   display: block;
   margin: 0 auto;
-  font-family: 'AvenirNext', sans-serif;
+  font-family: "AvenirNext", sans-serif;
   margin-bottom: 32px;
   width: 84px;
   height: 84px;
@@ -244,7 +243,6 @@ button:hover {
 
 ol {
   list-style: none;
-
 }
 
 .numbers h2 {
@@ -252,7 +250,7 @@ ol {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 16px;
-  font-family: 'AvenirNext', sans-serif;  /* Para cambiar la fuente */
+  font-family: "AvenirNext", sans-serif; /* Para cambiar la fuente */
 }
 
 .numbers p {
@@ -270,15 +268,15 @@ ol {
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 52px;
-    padding-right: 52px;
-    margin: 0 auto;
-    max-width: 1037px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 52px;
+  padding-right: 52px;
+  margin: 0 auto;
+  max-width: 1037px;
+}
 
 .list header {
   zoom: 1;
@@ -291,7 +289,7 @@ ol {
   margin-bottom: 50px;
   font-size: 2rem;
   font-weight: 800;
-  font-family: 'AvenirNextLTPro-Bold', sans-serif;
+  font-family: "AvenirNextLTPro-Bold", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -300,7 +298,6 @@ ol {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
   }
 
   .numbers > * {
@@ -308,7 +305,7 @@ ol {
     padding: 16px;
   }
 
-  .list{
+  .list {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -316,7 +313,7 @@ ol {
   .fruit {
     background-size: 540px;
     height: 120px;
-}
+  }
 }
 /* FIN PARTE 2 */
 
@@ -489,28 +486,26 @@ ul {
 
 /* FIN PARTE 4 */
 /* inicio parte 3*/
-.Contenedor{
+.Contenedor {
   display: grid;
-  background-color:  #dcdcdf;
+  background-color: #dcdcdf;
   grid-template-columns: 200px 200px 200px 200px;
   grid-gap: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
-  grid-template-areas: 
-        "a a b b"
-        "a a b b"
-        "c c c c"
-        ;
-      
+  grid-template-areas:
+    "a a b b"
+    "a a b b"
+    "c c c c";
 }
 
-.Contenedor div{
+.Contenedor div {
   display: grid;
   background-color: #000000;
   text-align: center;
   color: #ccc;
-  border : 1px solid #dcdcdf;
+  border: 1px solid #dcdcdf;
   border-radius: 12px;
   width: 200px;
   height: 200px;
@@ -518,47 +513,51 @@ ul {
 
 #shopper {
   background-image: url(https://s.cornershopapp.com/static/landings/homepage/img/Bags_2x.png);
-  grid-area:  a; 
-  background-position: 70% 100%,  100% 100%;
+  grid-area: a;
+  background-position: 70% 100%, 100% 100%;
   width: 450px;
   height: 450px;
   background-size: cover;
 }
 
 #shopper header {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85) 40%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.85) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
   padding-top: 50px;
   padding-bottom: 42px;
   margin-bottom: 8px;
   color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-shadow: 0px 2px 4px rgb(255 255 255 / 50%);
-  border-radius: 12px; 
+  border-radius: 12px;
 }
 
 #shopper span {
-  color:#4a4a4a;
+  color: #4a4a4a;
   margin-bottom: 8px;
 }
 
 #shopper h2 {
-font-size: 36px;
-color: black;
-padding-top: 35px;
-text-shadow: 0px 2px 4px rgb(255 255 255 / 50%);
-vertical-align: middle;
+  font-size: 36px;
+  color: black;
+  padding-top: 35px;
+  text-shadow: 0px 2px 4px rgb(255 255 255 / 50%);
+  vertical-align: middle;
 }
 
-#shopper h2 img{
-  display:inline-block;
-  }
+#shopper h2 img {
+  display: inline-block;
+}
 
 #tienda {
-    background-image: url(https://s.cornershopapp.com/static/landings/homepage/img/Storefront_2x.jpg);
-    grid-area:  b; 
-    width: 450px;
-    height: 450px;
-    background-size: cover;
+  background-image: url(https://s.cornershopapp.com/static/landings/homepage/img/Storefront_2x.jpg);
+  grid-area: b;
+  width: 450px;
+  height: 450px;
+  background-size: cover;
 }
 
 #tienda header {
@@ -568,42 +567,43 @@ vertical-align: middle;
   padding-top: 50px;
   padding-bottom: 42px;
   margin-bottom: 8px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-radius: 12px; 
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 12px;
 }
 
 #tienda h2 {
   font-size: 36px;
   color: white;
   padding-top: 35px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-shadow: 0px 2px 4px rgb(255 255 255 / 50%);
   vertical-align: middle;
-  }
+}
 
-
-#PF{
+#PF {
   background-color: #2b2b2b;
-  grid-area:  c; 
+  grid-area: c;
   width: 950px;
   height: 225px;
   padding-top: 30px;
   background-size: cover;
 }
 
-
 #PF header {
   color: #888b90;
   padding-top: 50px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #PF h2 {
   font-size: 36px;
   color: white;
   padding-top: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-shadow: 0px 2px 4px rgb(255 255 255 / 50%);
   vertical-align: middle;
-  }
+}
