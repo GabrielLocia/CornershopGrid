@@ -352,25 +352,7 @@ ol {
     "a a b b"
     "c c c c";
 }
-@media (max-width: 1000px) {
-  .Contenedor {
-    display: block;
-  }
-  #shopper, #tienda{
-    margin: auto;
-  }
-  #tienda{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-}
-@media (max-width: 1000px) {
 
-  #shopper, #tienda{
-    width: 100% !important;
-  
-  }
-}
 
 .Contenedor div {
   display: grid;
@@ -379,12 +361,17 @@ ol {
   color: #ccc;
   border: 1px solid #dcdcdf;
   border-radius: 12px;
-  width: 200px;
-  height: 200px;
+  height: 420px;
   font-family: 'AvenirLTStd-Book', sans-serif;
   font-weight: bolder;
 }
 
+
+@media (max-width:600px){
+  .Contenedor div {
+    height: 300px;
+  }
+}
 
 #shopper header {
   background-image: linear-gradient(
