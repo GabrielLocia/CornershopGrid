@@ -439,26 +439,12 @@ ul {
 .country .country-btn {
   margin-top: auto;
   min-width: 200px;
-  font-size: 16px;
-  padding: 4px 8px;
+  font-size: 14px;
+  padding: 10px;
   border-radius: 5px;
-  border: none;
   background-color: #ccc;
   color: #4a4a4a;
   outline: none;
-}
-
-.country-btn .iconify {
-  font-size: 30px;
-}
-
-.country-btn p {
-  display: flex;
-}
-
-.country-btn .arrow {
-  transform: rotate(180deg) !important;
-  margin-left: auto;
 }
 
 .country-btn:hover,
