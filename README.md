@@ -8,3 +8,4 @@
 * [A Complete Guide to Grid - css-tricks.com](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Iconos - Iconify](https://iconify.design/)
 * [Backdrop filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) - Overlay background on image.
+* [Emoji Flag symbol](https://apps.timwhitlock.info/emoji/tables/iso3166)
