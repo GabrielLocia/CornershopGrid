@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="main.css">
     <!--Icons-->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
 </head>
-
 <body>
     <div id="container">
         <!--Parte #1 ESTEFANIA-->
@@ -99,7 +99,15 @@
                     <a href="https://cornershopapp.com/mx/shoppers?adref=customer-landing" style="text-decoration:none">
                         <header><span>Tú eliges cuándo y cuánto tiempo trabajar</span>
                             <h2>Sé un Shopper
-                                <img src="img/RA.png" alt="shop">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    aria-hidden="true" focusable="false" width="1em" height="1em"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="1 0 19 23" class="iconify"
+                                    data-icon="eva:arrow-circle-up-fill" data-inline="false"
+                                    style="transform: rotate(90deg);">
+                                    <path fill="currentColor"
+                                        d="M12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10zM8.31 10.14l3-2.86a.49.49 0 0 1 .15-.1a.54.54 0 0 1 .16-.1a.94.94 0 0 1 .76 0a1 1 0 0 1 .33.21l3 3a1 1 0 0 1-1.42 1.42L13 10.41V16a1 1 0 0 1-2 0v-5.66l-1.31 1.25a1 1 0 0 1-1.38-1.45z">
+                                    </path>
+                                </svg>
                             </h2>
                         </header>
                     </a>
@@ -111,27 +119,26 @@
                             <h2>Publica tu tienda
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" focusable="false" width="1em" height="1em"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="1 0 19 23" class="iconify"
                                     data-icon="eva:arrow-circle-up-fill" data-inline="false"
-                                    style="transform: rotate(360deg);">
+                                    style="transform: rotate(90deg);">
                                     <path fill="currentColor"
                                         d="M12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10zM8.31 10.14l3-2.86a.49.49 0 0 1 .15-.1a.54.54 0 0 1 .16-.1a.94.94 0 0 1 .76 0a1 1 0 0 1 .33.21l3 3a1 1 0 0 1-1.42 1.42L13 10.41V16a1 1 0 0 1-2 0v-5.66l-1.31 1.25a1 1 0 0 1-1.38-1.45z">
                                     </path>
                                 </svg>
-
                             </h2>
                         </header>
                     </a>
                 </div>
                 <div id="PF">
                     <a href="https://cornershopapp.com/es-mx/faq" style="text-decoration:none">
-                        <header><span>¿Necesitas ayuda?</span>
+                        <header><span class="textextra">¿Necesitas ayuda?</span>
                             <h2>Preguntas frecuentes
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     aria-hidden="true" focusable="false" width="1em" height="1em"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="iconify"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="1 0 19 23" class="iconify"
                                     data-icon="eva:arrow-circle-up-fill" data-inline="false"
-                                    style="transform: rotate(360deg);">
+                                    style="transform: rotate(90deg);">
                                     <path fill="currentColor"
                                         d="M12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10zM8.31 10.14l3-2.86a.49.49 0 0 1 .15-.1a.54.54 0 0 1 .16-.1a.94.94 0 0 1 .76 0a1 1 0 0 1 .33.21l3 3a1 1 0 0 1-1.42 1.42L13 10.41V16a1 1 0 0 1-2 0v-5.66l-1.31 1.25a1 1 0 0 1-1.38-1.45z">
                                     </path>
@@ -201,13 +208,22 @@
                     </svg>
                 </div>
                 <div class="country">
-                    <div class="country-btn">
-                        <p><span class="iconify" data-icon="openmoji:flag-mexico" data-inline="false"></span>
+                    <select class="country-btn" name="country" id="country">
+                        <option value="mexico" selected>🇲🇽 México</option>
+                        <option value="canada-en">🇨🇦 Canada(English)</option>
+                        <option value="canada-fr">🇨🇦 Canada(French)</option>
+                        <option value="chile">🇨🇱 Chile</option>
+                        <option value="colombia">🇨🇴 Colombia</option>
+                        <option value="costa-rica">🇨🇷 Costa Rica</option>
+                        <option value="peru">🇵🇪 Peru</option>
+                        <option value="us-eng">🇺🇸 United States(English)</option>
+                        <option value="us-esp">🇺🇸 United States(Spanish)</option>
+                    </select>
+                        <!--<p><span class="iconify" data-icon="openmoji:flag-mexico" data-inline="false"></span>
                             &nbsp; México
                             <span class="iconify arrow" data-icon="eva:arrow-ios-upward-fill"
                                 data-inline="false"></span>
-                        </p>
-                    </div>
+                        </p>-->
                 </div>
                 <div class="copyright">
                     <p>© 2021 Cornershop by Uber</p>
