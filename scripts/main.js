@@ -25,7 +25,7 @@ function timeOut(num) {
 // dentro de un ciclo que es igual al numero de imágenes.
 async function animacion() {
     for (let index = 0; index < 9; index++) {
-        const result = await timeOut(index);
+        await timeOut(index);
     }
     //Reinicio de función haciendo un ciclo infinito.   
     animacion();
