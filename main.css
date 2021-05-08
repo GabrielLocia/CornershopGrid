@@ -50,6 +50,11 @@ body {
   padding-top: 25px;
 }
 
+#comidas {
+  max-width: 40vw;
+  min-width: 200px;
+}
+
 .heading {
   border: 1px solid white;
   justify-content: center;
@@ -337,16 +342,15 @@ ol {
 .Contenedor {
   display: grid;
   background-color: #dcdcdf;
-  grid-template-columns: 1fr 2fr 2fr 2fr  2fr 1fr;
-  grid-template-rows: repeat(3,180px);
+  grid-template-columns: 200px 200px 200px 200px;
   grid-gap: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
   grid-template-areas:
-    "a a a b b b"
-    "a a a b b b"
-    "c c c c c c";
+    "a a b b"
+    "a a b b"
+    "c c c c";
 }
 @media (max-width: 1000px) {
   .Contenedor {
@@ -488,21 +492,25 @@ ol {
   color: white;
 }
 
- @media (max-width: 600px){
+@media (max-width: 1000px) {
   .Contenedor {
-    display: grid;
-    background-color: #dcdcdf;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 320px 320px 200px;
-    grid-gap: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    justify-content: center;
-    grid-template-areas:
-      "a a"
-      "b b "
-      "c c";
+    display: block;
   }
+  #shopper, #tienda{
+    margin: auto;
+  }
+  #tienda{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+
+  #shopper, #tienda{
+    width: 100% !important;
+
+  }
+}
 }
 /* FIN PARTE 3 */
 
