@@ -153,7 +153,7 @@ a {
 }
 
 .download {
-  background-color: rgba(220, 220, 223, 0.8);
+  background-color: rgba(220, 220, 223, 0.5);
   padding-top: 65px;
   padding-bottom: 75px;
   backdrop-filter: blur(20px);
