@@ -35,9 +35,15 @@ body {
   grid-template-columns: [first] 100%;
   grid-template-rows: repeat(933px, 4);
 }
+
+.container-fluid {
+  padding: 0;
+}
+
 /* FIN Estilos Generales */
 
 /* PARTE 1: Estilos Introducción y Descargas */
+
 .logo {
   margin-top: 25px;
   height: 100%;
@@ -57,7 +63,6 @@ body {
 
 .heading {
   border: 1px solid white;
-  justify-content: center;
 }
 
 h1 {
@@ -108,7 +113,7 @@ input:focus {
   box-shadow: 1px 1px 10px #d9d9d9;
 }
 
-button {
+.costum {
   background-color: #ff0026;
   color: #fff;
   border: none;
@@ -154,9 +159,8 @@ a {
 
 .download {
   background-color: rgba(220, 220, 223, 0.5);
-  padding-top: 65px;
-  padding-bottom: 75px;
-  backdrop-filter: blur(20px);
+  padding: 65px 0 75px 0;
+  backdrop-filter: blur(5px);
 }
 
 .text-buttons {
@@ -238,12 +242,7 @@ a {
   }
 }
 
-.numbers {
-  display: flex;
-}
-
 .numbers figure {
-  display: block;
   margin: 0 auto;
   font-family: "AvenirNext", sans-serif;
   margin-bottom: 32px;
@@ -350,6 +349,7 @@ ol {
 /* PARTE 3: Shoppers y tiendas */
 
 .Parte3{
+  background-color: #dcdcdf;
   display: flex;
   justify-content: center;
   align-items: center;
