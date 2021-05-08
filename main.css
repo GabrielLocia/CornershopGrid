@@ -486,10 +486,22 @@ ul {
 
 /* FIN PARTE 4 */
 /* inicio parte 3*/
+.Parte3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .Contenedor {
   display: grid;
+
+  
+  border: 1px solid darkcyan;
   background-color: #dcdcdf;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  
   grid-gap: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -501,22 +513,20 @@ ul {
 }
 
 .Contenedor div {
-  display: grid;
+  width: 100%;
   background-color: #000000;
   text-align: center;
   color: #ccc;
   border: 1px solid #dcdcdf;
   border-radius: 12px;
-  width: 200px;
-  height: 200px;
+  
 }
 
 #shopper {
   background-image: url(https://s.cornershopapp.com/static/landings/homepage/img/Bags_2x.png);
   grid-area: a;
   background-position: 70% 100%, 100% 100%;
-  width: 450px;
-  height: 450px;
+  
   background-size: cover;
 }
 
@@ -555,8 +565,6 @@ ul {
 #tienda {
   background-image: url(https://s.cornershopapp.com/static/landings/homepage/img/Storefront_2x.jpg);
   grid-area: b;
-  width: 450px;
-  height: 450px;
   background-size: cover;
 }
 
@@ -585,8 +593,6 @@ ul {
 #PF {
   background-color: #2b2b2b;
   grid-area: c;
-  width: 950px;
-  height: 225px;
   padding-top: 30px;
   background-size: cover;
 }
